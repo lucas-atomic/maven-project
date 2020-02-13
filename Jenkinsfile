@@ -28,13 +28,13 @@ pipeline {
             parallel {
                 stage ('Deploy to Staging'){
                     step {
-                        sh "scp -i /home/luis/Documents/AWSProtonDev.pem **/target/*.war ubuntu@ec2-${params.Jenkins}:/usr/local/tomcat7/webapps
+                        sh "scp -i /home/luis/Documents/AWSProtonDev.pem **/target/*.war ubuntu@ec2-${params.Jenkins}:/usr/local/tomcat7/webapps"
                     }
                 }
                 
                 stage ('Deploy to Production'){
                     step {
-                       sh "scp -i /home/luis/Documents/AWSProtonDev.pem **/target/*.war ubuntu@ec2-${params.JenkinsDev}:/usr/local/tomcat7/webapps
+                       sh "scp -i /home/luis/Documents/AWSProtonDev.pem **/target/*.war ubuntu@ec2-${params.JenkinsDev}:/usr/local/tomcat7/webapps"
                     }
                 }
             }
