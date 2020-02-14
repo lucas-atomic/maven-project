@@ -28,13 +28,13 @@ pipeline {
             parallel {
                 stage ('Deploy to Staging'){
                     steps {
-                        sh "echo admin | sudo -S scp -i /home/luis/Documents/AWSProtonDev.pem **/target/*.war  ubuntu@${params.Jenkins}:/usr/local/tomcat7/webapps"
+                        sh "echo | sudo -S scp -i /home/luis/Documents/AWSProtonDev.pem **/target/*.war  ubuntu@${params.Jenkins}:/usr/local/tomcat7/webapps"
                     }
                 }
                 
                 stage ('Deploy to Production'){
                     steps {
-                       sh "echo admin | sudo -S scp -i /home/luis/Documents/AWSProtonDev.pem **/target/*.war  ubuntu@${params.JenkinsDev}:/usr/local/tomcat7/webapps"
+                       sh "echo | sudo -S scp -i /home/luis/Documents/AWSProtonDev.pem **/target/*.war  ubuntu@${params.JenkinsDev}:/usr/local/tomcat7/webapps"
                     }
                 }
             }
