@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     parameters {
-          string(name: 'Jenkins', defaultValue: '3-86-84-170', description: 'Staging Serve')
-          string(name: 'JenkinsDev', defaultValue: '3-88-207-178', description: 'Production Server')
+          string(name: 'Jenkins', defaultValue: '3.86.84.170', description: 'Staging Serve')
+          string(name: 'JenkinsDev', defaultValue: '3.88.207.178', description: 'Production Server')
     }
    
     triggers {
