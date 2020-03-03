@@ -6,6 +6,7 @@ pipeline {
           string(name: 'JenkinsDev', defaultValue: '3.88.207.178', description: 'Production Server')
          //string(name: 'Jenkins', defaultValue: '172.31.90.107', description: 'Staging Serve')    
          //string(name: 'JenkinsDev', defaultValue: '172.31.85.10', description: 'Production Server')
+        // TESTEEEE
     }
    
     triggers {
