@@ -23,8 +23,8 @@
 
   <distributionManagement>
     <repository>
-      <id>jenkins</id>
-      <url>https://github.com/lucas-atomic/jenkins.git</url>
+      <id>testeDeploy</id>
+      <url>https://nexus.atomicsolutions.com.br/repository/testeDeploy/</url>
     </repository>
     <site>
       <id>site-server</id>
