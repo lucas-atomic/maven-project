@@ -22,6 +22,10 @@
   </modules>
 
   <distributionManagement>
+    <repository>
+      <id>jenkins</id>
+      <url>https://github.com/lucas-atomic/jenkins.git</url>
+    </repository>
     <site>
       <id>site-server</id>
       <name>Test Project Site</name>
